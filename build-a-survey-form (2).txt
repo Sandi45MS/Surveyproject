@@ -1,0 +1,162 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Web Forum Lamaran Pekerjaan</h1>
+    <p id="description">PT Pura Jaya</p>
+    <form  method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+    <fieldset>
+      <label for="name-label" id="name-label">Nama: <input id="name" placeholder="Nama Lengkap" required type="text" ></label>
+      <label for="email-label" id="email-label" >Email: <input id="email" type="email" placeholder="contohemail.123@gmail.com" required ></label>
+      <label for="number-label" id="number-label" >Umur: <input type="number" id="number" name="age" min="16" max="35" placeholder="Minimal 16 Maksimal 35" required></label>
+      <label for="dropdown">Pekerjaan yang diinginkan:
+          <select id="dropdown" name="option">
+            <option value="1">Front Liner</option>
+            <option value="2">Teknisi Pengkabelan</option>
+            <option value="3">Software engginer</option>
+            <option value="4">Lainya</option>
+          </select>
+          <label for="dropdown">Pendidikan Terakhir:
+          <select id="dropdown" name="option">
+            <option value="1">SMA</option>
+            <option value="2">SMK</option>
+            <option value="3">S1</option>
+            <option value="4">S2</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <h2>Persyaratan</h2>
+            <label for="pengalaman"><input type="checkbox" id="pengalaman" class="inline" name="account-type" value="syarat1"> 1 Tahun Kontrak kerja </label>
+            <label for="sikap"><input type="radio" id="sikap" class="inline" name="account-type" value="sikap"> Disiplin, bertanggung jawab </label>
+            <label for="kerjasama"><input type="radio" id="kerjasama" class="inline" name="account-type" value="gotong-royong"> Bisa bekerja sama dengan tim </label>
+            <label for="patuh"><input type="radio" id="patuh" class="inline" name="account-type" value="aturan"> Mengikuti aturan pabrik </label>
+            <label for="komunikasi"><input type="radio" id="komunikasi" class="inline" name="account-type" value="komunikasi"> Memiliki skill komunikasi  </label>
+        </fieldset>
+        <fieldset>
+          <h3>Lamaran yang harus dilengkapi</h3>
+             <label for="foto-bpjs">CV <input id="foto-bpjs" type="file" name="file" required /></label>
+              <label for="foto-KK">Fotocopy KK <input id="foto-KK" type="file" name="file" required /></label>
+              <label for="foto-KTP">Fotocopy KTP <input id="foto-KTP" type="file" name="file" required /></label>
+              <label for="foto-Ijazah">Fotocopy Ijazah <input id="foto-Ijazah" type="file" name="file" required /></label>
+              <label for="riwayat-hidup">Daftar Riwayat hidup <input id="riwayat-hidup" type="file" name="file" required /></label>
+              <label for="SKCK">SKCK <input id="SKCK" type="file" name="file" required /></label>
+              <label for="sertifikat">Sertifikat (opsional)<input id="sertifikat" type="file" name="file"  /></label>
+          </fieldset>
+          <fieldset>
+            <h4>Kriteria</h4>
+            <ol>
+              <li>Laki - Laki / Perempuan</l1>
+              <li>Minimal Tinggi Badan :
+                <ol>
+                  <li>Laki - Laki : 155 cm</li>
+                  <li>Perempuan : 150 cm</li>
+                  </ol>
+            </fieldset>
+             <fieldset>
+               <p>Info lebih lanjut <a target="_blank" href="https://wa.me/6285643325626"> wa:085643325626</a></p>
+               <div class="container">
+               <label for="terms-and-conditions" class="centered-element">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="syarat2" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        </div>
+            </fieldset>
+            <fieldset>
+              <label>Deskripsi diri:
+          <textarea id="bio" rows="3" cols="30" placeholder="Saya memiliki pengalaman di..."></textarea>
+              </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+      </form>
+    </body>
+      </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  color: #f5f6f7;
+  background-color: #1b1b32;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+   padding: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+ 
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.inline {
+   width: unset;
+   margin: 0 0.5em 0 0;
+   vertical-align: middle;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.centered-element {
+  text-align: center;
+}
+
+** end of undefined **
+
